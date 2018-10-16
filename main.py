@@ -32,5 +32,26 @@ async def on_ready():
 @bot.event
 async def on_member_join(ctx, member):
     await member.guild.get_channel(499773739144052739).send("Welcome to the server, {0}! ^^".format(member))
+    
+@bot.command()
+@cmd.is_owner()
+async def reload(ctx, cog="all"):
+    """Reloads a given cog, or all of them."""
+    if cog != "all":
+        cog = "cogs." + cog
+        try:
+            bot.unload_extension(cog)
+            bot.load_extension(cog)
+        except ModuleNotFoundError:
+            await ctx.send("Input a valid cog filename please!")
+            return 
+        print("Reloaded <" + cog + ">")
+        await ctx.send("Reloaded <" + cog + ">")
+    else:
+        for cog in cogs_:
+            bot.unload_extension(cog)
+            bot.load_extension(cog)
+            print("Reloaded <" + cog + ">")
+            await ctx.send("Reloaded <" + cog + ">")
 
 bot.run(os.environ['BOT_TOKEN'])
