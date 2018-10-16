@@ -14,8 +14,8 @@ import time
 
 sapi = srcomapi.SpeedrunCom()
 
-rapi = praw.Reddit(client_id="PEwwoOgGbp1onQ",
-                   client_secret="0YINpE0eODb0vDvK-u1EnMCfGq4",
+rapi = praw.Reddit(client_id=os.environ['REDDIT_ID'],
+                   client_secret=os.environ['REDDIT_SECRET'],
                    user_agent="test^2bot-discordbot[python] v0.5 (by /u/thehellbell)")
 
 extn = ["jpg", "png", "gif", "jpeg", "gifv"]
