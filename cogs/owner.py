@@ -27,7 +27,7 @@ class Owner:
 
     @settings.command(aliases=["off", "log_off", "logoff"])
     async def log_out(self, ctx):
-        """Shuts down the bot."""
+        """Shuts down the bot (or resets it due to weird Heroku shenanigans)."""
         await ctx.send("Good bye.")
         await self.bot.logout()
 
