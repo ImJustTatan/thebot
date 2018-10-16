@@ -9,7 +9,7 @@ ownerid = 264195450859552779
 
 bot = cmd.Bot(command_prefix=">>",
               owner_id=ownerid,
-              description="Jaja así es")
+              description="haha yes")
 
 cogs_ = ["cogs.owner",
          "cogs.info",
