@@ -3,4 +3,4 @@ git+https://github.com/rorre/yippi
 git+https://github.com/blha303/srcomapi
 praw
 bs4
-python-distutils
+python3-distutils
