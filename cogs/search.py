@@ -86,7 +86,7 @@ class Searching:
 
     @speedrun.command()
     async def wr(self, ctx, *, game):
-        """With a given game, displays the world record for a category"""
+        """Searches a given game, and displays the world record of the selected category."""
         a = ctx.message.author
 
         def check(m):
