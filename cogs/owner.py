@@ -23,7 +23,7 @@ class Owner:
         else:
             on = self.bot.user.name
             await self.bot.user.edit(username=n)
-            await ctx.send("Username changed from '" + on + "' to '" + n + "'.")
+            await ctx.send(f"Username changed from '{on}' to '{n}'.")
 
     @settings.command(aliases=["off", "log_off", "logoff"])
     async def log_out(self, ctx):
