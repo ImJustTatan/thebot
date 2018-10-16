@@ -2,6 +2,5 @@ git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]
 git+https://github.com/rorre/yippi
 git+https://github.com/blha303/srcomapi
 praw
-random
 bs4
 python-distutils
