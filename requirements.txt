@@ -3,3 +3,4 @@ git+https://github.com/blha303/srcomapi
 python-dateutil
 praw
 bs4
+rule34
