@@ -55,4 +55,4 @@ async def reload(ctx, cog="all"):
             print("Reloaded <" + cog + ">")
             await ctx.send("Reloaded <" + cog + ">")
 
-bot.run('NDk5Nzc1NjA1OTk5NTM0MDkz.DqBWqg.4z5CYAuW4ECafr6i1NzTiGhtR9A')
+bot.run(os.environ['BOT_TOKEN'])
