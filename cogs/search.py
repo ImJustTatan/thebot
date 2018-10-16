@@ -6,6 +6,7 @@ import prawcore
 import random
 import yippi
 from cogs.scripts import youtube
+import os
 
 import srcomapi
 import srcomapi.datatypes as dt
